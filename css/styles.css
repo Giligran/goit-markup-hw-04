@@ -339,7 +339,7 @@ outline: 2px solid tomato;
 }
 
 .client-list-item {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
 }
 
@@ -351,6 +351,17 @@ outline: 2px solid tomato;
     align-items: center;
     border: 1px solid #8E8F99;
         border-radius: 4px;
+}
+
+.client-logo {
+     fill: #8E8F99;
+}
+.client-link:is(:hover,:focus) {
+    border-color: var(---ocean-color);
+}
+
+.client-link:is(:hover, :focus) .client-logo {
+    fill: var(---ocean-color);
 }
 
 .portfolio {

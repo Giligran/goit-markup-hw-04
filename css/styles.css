@@ -137,6 +137,12 @@ header {
     color: #2E2F42;
 }
 
+.navigation-link:is(:hover,:focus){
+    color: var(---ocean-color);
+}
+
+
+
 .contact-link {
     font-style: normal;
     line-height: 1.33;   
@@ -157,6 +163,8 @@ header {
 }
 /* main sections styles */
 .hero {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1440px;
     min-height: 600px;
     background: var(--primiry-background);
@@ -221,6 +229,9 @@ header {
 .list-btn:focus{
     background-color: var(---ocean-color);
     color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .feutures {
     padding-top: 120px;
@@ -331,7 +342,6 @@ padding-bottom: 120px;
 display: flex;
 
 gap: 24px;
-outline: 2px solid tomato;
 }
 
 .client-list-item {
@@ -380,9 +390,9 @@ gap:48px 24px;
     border: 1px solid #E7E9FC;
 }
 
-.portfolio-part:is(:hover,:focus) {
+.portfolio-item:is(;:focus,:hover){
     border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08) ;
 }
 
 .portfolio-subtitle{
@@ -399,8 +409,9 @@ gap:48px 24px;
     height: 112px;
     align-items: center;
     justify-content: center;
-    padding: 24px 100px;
     margin-bottom: 8px;
+    background: var(--secondary-background);
+    border-radius: 4px;
 }
 
 .feutures-part {
